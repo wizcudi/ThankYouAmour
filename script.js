@@ -31,7 +31,16 @@ const projects = [
         description: 'Displays and organizes soccer players based on criteria set by user.' ,
         link: 'https://wizcudi.github.io/SoccerTeamCards/'
     },
-    
+    {
+        name: 'Palindrome Checker',
+        description: 'checks palindrome for certain letters and phrases',
+        link: 'https://wizcudi.github.io/PalindromeCheck/',
+    },
+    {
+        name: 'Roman Numeral Converter',
+        description: 'Converts to Roman Numerals',
+        link: 'https://wizcudi.github.io/RomanNumeralConverter/',
+    }
 ];
 
 const portfolioProjects =()=> {
