@@ -37,15 +37,21 @@ const projects = [
         link: 'https://wizcudi.github.io/PalindromeCheck/',
     },
     {
+        name: 'Number Sorter',
+        description: 'Sorts numbers from least to greatest',
+        link: 'https://wizcudi.github.io/numberSorter/',
+    },
+    {
+        name: 'Statistics Calculator',
+        description: 'Performing statistical calculations like mean, median, mode, variance, and standard deviation.',
+        link: 'https://wizcudi.github.io/statisticsCalculator/',
+    },
+    {
         name: 'Roman Numeral Converter',
         description: 'Converts to Roman Numerals',
         link: 'https://wizcudi.github.io/RomanNumeralConverter/',
     },
-    {
-        name: 'Number Sorter',
-        description: 'Sorts numbers from least to greatest',
-        link: 'https://wizcudi.github.io/numberSorter/',
-    }
+    
 ];
 
 const portfolioProjects =()=> {
