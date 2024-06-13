@@ -40,6 +40,11 @@ const projects = [
         name: 'Roman Numeral Converter',
         description: 'Converts to Roman Numerals',
         link: 'https://wizcudi.github.io/RomanNumeralConverter/',
+    },
+    {
+        name: 'Number Sorter',
+        description: 'Sorts numbers from least to greatest',
+        link: 'https://wizcudi.github.io/numberSorter/',
     }
 ];
 
