@@ -1,3 +1,11 @@
+
+
+:root {
+    --primary: #003459;
+    --secondary: #007ea7;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -99,8 +107,27 @@ nav {
 }
 .contact-links{
     display: flex;
-    flex-direction: column;
-    row-gap: 3px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* padding: 10px 0; */
+
+}
+.contact-links span{
+    display: flex;
+    justify-content: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 15px 0;
+    width: 35%;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.contact-links a{
+    color: white;
+    font-weight: 600;
 }
 .img-size{
     width: 270px;
@@ -119,6 +146,14 @@ nav {
     .about-header h1{
         font-size: 53px;
     }
+    .contact-links{
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .contact-links span{
+        padding: 10px 0;
+        width: 45%;
+    }
 }
 @media (max-width: 500px) {
     .about-header h1 {
@@ -129,8 +164,17 @@ nav {
     .about-header h1{
         font-size: 37px;
     }
+    .contact-links{
+        flex-direction: column;
+    }
+    .contact-links span{
+        width: 50%;
+    }
 }
 @media (max-width: 365px) {
+    .contact-links span{
+        width: 70%;
+    }
     .about-header h1 {
         font-size: 30px;
     }
@@ -144,6 +188,9 @@ nav {
     }
 }
 @media (max-width: 303px) {
+    .contact-links span{
+        width: 80%;
+    }
     .about-header h1 {
         font-size: 27px;
     }
@@ -181,7 +228,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 20px;
+    row-gap: 25px;
     column-gap: 10px;
     padding: 20px 0px;
     /* border: solid green 2px; */
@@ -189,17 +236,26 @@ nav {
 .project {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    width: 46%;
+    width: 45%;
     padding: 20px 10px;
     transition: transform 0.2s;
+    background-color: var(--secondary);
+    border: solid black 2px;
+    border-radius: 15px;
+    /* row-gap: 20px; */
 }
 .project:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .project h2 {
+    border-bottom: solid black 2px;
+    padding: 10px 0;
     margin: 0;
+}
+.project h2,
+.project p {
+    color: white;
     /* border: solid black 2px; */
 }
 @media (max-width: 710px) {
@@ -257,7 +313,8 @@ nav {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: var(--primary);
+    border-top: black solid 2px;
     color: #fff;
 }
 
