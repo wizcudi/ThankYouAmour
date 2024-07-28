@@ -7,32 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <!-- javascript:void(0); makes link act as a clickable element without navigating to another page or reloading the current page. -->
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleNavbar()">
+                <!-- &#9776 corresponds to the "hamburger" menu icon -->
+                &#9776;
+            </a>
+
+            <ul class="navbar-links" id="navbar-links">
+                <li><a class="nav-tabs" href="#about">About Me</a></li>
+                <li><a class="nav-tabs" href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Hi, I'm Tony Saint-Amour, a self-taught Software Developer specializing in front-end development using JavaScript.</p>
-        <p>My journey into web development began with a desire to create an application and has since evolved into a full-fledged passion. I am continually learning and exploring new technologies to stay up-to-date with industry trends. My goal is to deliver high-quality code and seamless user experiences.</p>
-        
+    <section class="about-section" id="about">
+        <div class="about-header">
+            <h1>Hello, I'm Tony</h1>
+            <h1>Nice To Meet You!</h1>
+        </div>
+        <div class="about-info">
+            <div class="about-img">
+                <img class="img-size" src="TonyStool.JPG"/>
+            </div>
+            <div class="about-bio">
+                <p>
+                    I'm a web designer who enjoys creating delightful experiences.
+                </p>
+                <p>
+                    I first got into technology and design during the 2020 shutdowns. From then on, my passion towards design had sparked greatly which allowed me to spend countless days and nights improving my skills and knowledge.
+                    
+                </p>
+                <p> 
+                    I am passionate about creating work that empowers users and makes social impact through engaging experiences.
+                    Prior to my journey into design, I spent 8 years curating concerts and live events.
+                    Now I aim to combine my two passions and offer my ideas to the world - it's a story I'd love to share with you!
+                    Feel free to reach out via the links below   
+                </p>
+                <p class="contact-links">
+                    <span>
+                        <a href="mailto:thankyouamour@gmail.com">
+                            Email
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://docs.google.com/document/d/11BKJfbhHApyeCScz_HAv6vIU6jT-7pq2d6ErfpQmef8/edit?usp=sharing" target="_blank">
+                            Resume
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/thankyouamour" target="_blank">
+                            LinkedIn
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/thankyouamour/" target="_blank">
+                            Instagram
+                        </a>
+                    </span>
+                    
+
+                </p>
+                <!-- <p>Resume</p>
+                <p>LinkedIn</p>
+                <p>Instagram</p> -->
+            </div>
+        </div>
+
     </section>
 
-    <section id="projects">
+    <section class="project-section" id="projects">
         <h1>My Projects</h1>
-        <div id="projects-container"></div>
+        <div class="projects-container" id="projects-container"></div>
     </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>If you are interested in working together or have any questions, feel free to reach out to me via email at Tony.SaintAmour@gmail.com.</p>
-    </section>
+    
 
     <footer>
         <p>&copy; 2024 Tony Saint-Amour. All rights reserved.</p>
