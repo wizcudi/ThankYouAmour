@@ -3,114 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
+
+    <title>My Portfolio</title>
+    
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav class=" navbar  navbar-expand-lg   " >
+            <div class="nav-home-container container-fluid">
 
-            <!-- javascript:void(0); makes link act as a clickable element without navigating to another page or reloading the current page. -->
-            <a href="javascript:void(0);" class="toggle-button" onclick="toggleNavbar()">
-                <!-- &#9776 corresponds to the "hamburger" menu icon -->
-                &#9776;
-            </a>
-            <ul class="navbar-links" id="navbar-links">
-                <li><a class="nav-tabs" href="#about">About</a></li>
-                <li><a class="nav-tabs" href="#projects">Projects</a></li>
-            </ul>
-
+                <a class="navbar-brand" href="#">thankyouamour</a>
             
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>    
         </nav>
     </header>
 
-    <section class="about-section" id="about">
-        <div class="about-header">
-            <h1>Hello, I'm Tony</h1>
-            <h1>Nice To Meet You!</h1>
-        </div>
-        <div class="about-info">
-            <div class="about-img">
-                <img class="img-size" src="TonyStool.JPG"/>
+    <main class="container-md about-section main" id="about">
+
+        <section class="row">
+
+            <div class="container-fluid about-header">
+                <h1 class="display-1">Hello, I'm Tony</h1>
+                <h1 class="display-1" >Nice To Meet You!</h1>
             </div>
-            <div class="about-bio">
 
-
-                <p>
-                I'm a web designer with a passion for creating impactful and user-centric web experiences. 
-                My journey into the world of web design began during the 2020 shutdowns, 
-                igniting a deep passion for web development that has driven me to continuously enhance my skills.
-                </p>
-                <p>
-                With a solid foundation in JavaScript, HTML, and CSS, along with experience in front-end frameworks like React, I specialize in developing responsive and visually appealing websites. Whether it's building a dynamic e-commerce site, designing a sleek portfolio for a creative professional, or optimizing web applications for performance, I thrive on bringing innovative ideas to life.
-                </p>
-                <p>
-                Before diving into web design, I spent 8 years managing concerts and live events, where I honed my skills in organization, attention to detail, and client communication. This background enriches my approach to web design, blending creativity with a strong understanding of user needs and project management.
-                </p>
-                <p>
-                I am excited to leverage my skills and experience to create engaging digital solutions that resonate with users and achieve your goals. Let's collaborate to bring your vision to life!
-                </p>
-
-
-
-
-                <!-- <p>
-                    I'm a web designer who enjoys creating delightful experiences.
-                </p>
-                <p>
-                    I first got into technology and design during the 2020 shutdowns. From then on, my passion towards design had sparked greatly which allowed me to spend countless days and nights improving my skills and knowledge.
-                    
-                </p>
-                <p> 
-                    I am passionate about creating work that empowers users and makes social impact through engaging experiences.
-                    Prior to my journey into design, I spent 8 years curating concerts and live events.
-                    Now I aim to combine my two passions and offer my ideas to the world - it's a story I'd love to share with you!
-                    Feel free to reach out via the links below   
-                </p> -->
-                <p class="contact-links">
-                    <span>
-                        <a href="mailto:thankyouamour@gmail.com">
-                            Email
-                        </a>
-                    </span>
-                    <span>
-                        <a href="https://docs.google.com/document/d/11BKJfbhHApyeCScz_HAv6vIU6jT-7pq2d6ErfpQmef8/edit?usp=sharing" target="_blank">
-                            Resume
-                        </a>
-                    </span>
-                    <span>
-                        <a href="https://www.linkedin.com/in/thankyouamour" target="_blank">
-                            LinkedIn
-                        </a>
-                    </span>
-                    <span>
-                        <a href="https://www.instagram.com/thankyouamour/" target="_blank">
-                            Instagram
-                        </a>
-                    </span>
-                    
-
-                </p>
-                <!-- <p>Resume</p>
-                <p>LinkedIn</p>
-                <p>Instagram</p> -->
+            <div class="col-lg-5 col-md-5 col-sm-7 about-img">
+                <img class="img-fluid rounded" src="TonyStool.JPG"/>
             </div>
-        </div>
 
-    </section>
+            <div class="col-lg-7 col-md-7 col-sm-12  about-bio">
 
-    <section class="project-section" id="projects">
-        <h1>My Projects</h1>
-        <div class="projects-container" id="projects-container"></div>
-    </section>
+                <p>
+                    I'm a web designer with a passion for creating impactful and user-centric web experiences. 
+                    My journey into the world of web design began during the 2020 shutdowns, 
+                    igniting a deep passion for web development that has driven me to continuously enhance my skills.
+                </p>
+
+                <p>
+                    With a solid foundation in JavaScript, HTML, and CSS, along with experience in front-end frameworks like React, I specialize in developing responsive and visually appealing websites. Whether it's building a dynamic e-commerce site, designing a sleek portfolio for a creative professional, or optimizing web applications for performance, I thrive on bringing innovative ideas to life.
+                </p>
+
+                <p>
+                    Before diving into web design, I spent 8 years managing concerts and live events, where I honed my skills in organization, attention to detail, and client communication. This background enriches my approach to web design, blending creativity with a strong understanding of user needs and project management.
+                </p>
+                
+                <p>
+                    I am excited to leverage my skills and experience to create engaging digital solutions that resonate with users and achieve your goals. Let's collaborate to bring your vision to life!
+                </p>
+
+                <div class="contact-links">
+
+                    <a class="btn btn-secondary links-btn" href="mailto:thankyouamour@gmail.com">
+                        Email
+                    </a>
+
+                    <a class="btn btn-secondary links-btn" href="https://docs.google.com/document/d/11BKJfbhHApyeCScz_HAv6vIU6jT-7pq2d6ErfpQmef8/edit?usp=sharing" target="_blank">
+                        Resume
+                    </a>
+
+                    <a class="btn btn-secondary links-btn" href="https://www.linkedin.com/in/thankyouamour" target="_blank">
+                        LinkedIn
+                    </a>
+                    
+                    <a class="btn btn-secondary links-btn" href="https://www.instagram.com/thankyouamour/" target="_blank">
+                        Instagram
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section project-section" id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-container" id="projects-container"></div>
+        </section>
+
+    </main>
 
     
 
-    <footer>
-        <p>&copy; 2024 Tony Saint-Amour. All rights reserved.</p>
+    <footer >
+        <div class="card footer-card">
+            <div class="card-body footer-card-body">
+                <p class="card-title">
+                    &copy; 2024 Tony Saint-Amour. All rights reserved.
+                </p>
+            </div>
+        </div>
+        
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,42 +3,42 @@ const projectsContainer = document.getElementById('projects-container');
 const projects = [
     
     {
-        name: "Shopping Cart",
-        description: "Dessert Shopping Cart",
-        link: "https://wizcudi.github.io/ShoppingCart/"
+        name: 'Calorie Counter',
+        description: 'Allows users to add food eaten and workouts to track there daily calories burned.',
+        link: 'https://wizcudi.github.io/calorieCounter/'
     },
     {
         name: 'Pokemon Search',
         description: 'Search up any Pokemon by name or ID number',
         link: 'https://wizcudi.github.io/PokeDex/',
     },
-    {
-        name: 'Calorie Counter',
-        description: 'Allows users to add food eaten and workouts to track there daily calories burned.',
-        link: 'https://wizcudi.github.io/calorieCounter/'
-    },
     
     {
+        name: "Shopping Cart",
+        description: "Dessert shopping cart project, showcasing CRUD functionalites.",
+        link: "https://wizcudi.github.io/ShoppingCart/"
+    },
+    {
         name: 'Dice Game',
-        description: 'Rolling Dice Game',
+        description: "Try you're luck rolling the dice. ",
         link: 'https://wizcudi.github.io/diceGame/'
     },
     {
         name: 'RPG Game',
-        description: 'Role Playing Game that allows users to fight monsters/dragons, level up and more.',
+        description: 'Role Playing Game where you fight monsters and dragons. Level up as you play.',
         link: 'https://wizcudi.github.io/rpgGame/'
     },
     
 
 
     {
-        name: "News Author Page",
-        description: "Fetching data from Free Code Camp APi to display authors of Free Code Camp blogs",
+        name: "Author Page",
+        description: "Fetches data from Free Code Camp APi to display authors of Free Code Camp blogs",
         link: "https://wizcudi.github.io/FCCNewsAuthorPage/"
     },
     {
-        name: "Forum Leader Board",
-        description: "BEST VIEWED ON MONITOR SCREEN! Fetching data from Free Code Camp to display a Forum",
+        name: "Forum Board",
+        description: "Fetches data from Free Code Camp APi to display a Forum",
         link: "https://wizcudi.github.io/FCCForum/"
     },
 
@@ -54,7 +54,7 @@ const projects = [
     },
     {
         name: 'Platformer Game',
-        description: 'BEST VIEWED ON MONITOR SCREEN! Mario Bros type of game with 2 check points.',
+        description: 'Mario Bros type of game with 2 check points. Best played on desktop.',
         link: 'https://wizcudi.github.io/PlatformerGame/',
     },
     {
@@ -75,30 +75,24 @@ const projects = [
     
 ];
 
-const toggleNavbar = () => {
-
-    // checks current display style
-    // if it is 'flex' it sets to none
-    // if its not 'flex' it will set to flex
-    // CSS automactically sets to none, but will also display toggle button
-    // pressing toggle button can active function 
-    const navbarLinks = document.getElementById("navbar-links");
-    if (navbarLinks.style.display === "flex") {
-        navbarLinks.style.display = "none";
-    } else {
-        navbarLinks.style.display = "flex";
-    }
-
-}
 
 const portfolioProjects =()=> {
     // display portfolio projects
     projects.forEach(({name, description, link})=>{
         projectsContainer.innerHTML += `
-            <a class="project" href="${link}">
-                <h2>${name}</h2>
-                <p>${description}</p>
-            </a>
+            <div class="card project-card">
+                <div class="project-body card-body">
+                    <div>
+                        <h2 class="card-title">${name}</h2>
+                        <p class="card-text">${description}</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-secondary links-btn" href="${link}">
+                            View Project
+                        </a>
+                    </div>
+                </div<
+            </div>
         `
     })
 }
