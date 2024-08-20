@@ -4,117 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="styles.css">
 
     <title>My Portfolio</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
 </head>
 <body>
 
-    <header>
-        <nav class=" navbar  navbar-expand-lg   " >
-            <div class="nav-home-container container-fluid">
+    <section class="profile-section" id="profile-section">
 
-                <a class="navbar-brand" href="#">thankyouamour</a>
-            
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
-                        </li>
-                    </ul>
+        <div class="profile-h1">
+            <h1>
+                Hi, I'm Tony
+            </h1>
+        </div>
+
+        <div class="profile-img-div">
+            <img class="profile-img" src="./TonyStool-removebg-.png" />
+
+            <div id="projects-div" class="profile-svg-div projects-div">
+                <svg id="projects-div" class="profile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z"/>
+                </svg>
+                <h2>Projects</h2>
+            </div>
+
+            <div id="contacts-div" class="profile-svg-div contacts-div">
+                <svg id="contacts-div" class="profile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z"/>
+                </svg>
+                <h2>Contact</h2>
+            </div>
+
+            <div id="about-div" class="profile-svg-div about-div">
+                <svg id="about-div" class="profile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z"/>
+                </svg>
+                <h2>About Me</h2>
+            </div>
+
+            <div id="socials-div" class="profile-svg-div socials-div">
+                <svg id="socials-div" class="profile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z"/>
+                </svg>
+                <h2>Socials</h2>
+            </div>
+        
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="about-section" class="about-section">
+
+        <div class="navigation-section">
+            <div class="navigation">
+                <div id="about-back-home" class="back-home">
+                    <svg class="back-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"/>
+                    </svg>
+                    <p class="navigation-p">Go Back To Home Page</p>
                 </div>
-
-            </div>    
-        </nav>
-    </header>
-
-    <main class="container-md about-section main" id="about">
-
-        <section class="row">
-
-            <div class="container-fluid about-header">
-                <h1 class="display-1">Hello, I'm Tony</h1>
-                <h1 class="display-1" >Nice To Meet You!</h1>
-            </div>
-
-            <div class="col-lg-5 col-md-5 col-sm-7 about-img">
-                <img class="img-fluid rounded" src="TonyStool.JPG"/>
-            </div>
-
-            <div class="col-lg-7 col-md-7 col-sm-12  about-bio">
-
-                <p>
-                    I'm a web designer with a passion for creating impactful and user-centric web experiences. 
-                    My journey into the world of web design began during the 2020 shutdowns, 
-                    igniting a deep passion for web development that has driven me to continuously enhance my skills.
-                </p>
-
-                <p>
-                    With a solid foundation in JavaScript, HTML, and CSS, along with experience in front-end frameworks like React, I specialize in developing responsive and visually appealing websites. Whether it's building a dynamic e-commerce site, designing a sleek portfolio for a creative professional, or optimizing web applications for performance, I thrive on bringing innovative ideas to life.
-                </p>
-
-                <p>
-                    Before diving into web design, I spent 8 years managing concerts and live events, where I honed my skills in organization, attention to detail, and client communication. This background enriches my approach to web design, blending creativity with a strong understanding of user needs and project management.
-                </p>
-                
-                <p>
-                    I am excited to leverage my skills and experience to create engaging digital solutions that resonate with users and achieve your goals. Let's collaborate to bring your vision to life!
-                </p>
-
-                <div class="contact-links">
-
-                    <a class="btn btn-secondary links-btn" href="mailto:thankyouamour@gmail.com">
-                        Email
-                    </a>
-
-                    <a class="btn btn-secondary links-btn" href="https://docs.google.com/document/d/11BKJfbhHApyeCScz_HAv6vIU6jT-7pq2d6ErfpQmef8/edit?usp=sharing" target="_blank">
-                        Resume
-                    </a>
-
-                    <a class="btn btn-secondary links-btn" href="https://www.linkedin.com/in/thankyouamour" target="_blank">
-                        LinkedIn
-                    </a>
-                    
-                    <a class="btn btn-secondary links-btn" href="https://www.instagram.com/thankyouamour/" target="_blank">
-                        Instagram
-                    </a>
-
-                </div>
-            </div>
-
-        </section>
-
-        <section class="main-section project-section" id="projects">
-            <h1>My Projects</h1>
-            <div class="projects-container" id="projects-container"></div>
-        </section>
-
-    </main>
-
-    
-
-    <footer >
-        <div class="card footer-card">
-            <div class="card-body footer-card-body">
-                <p class="card-title">
-                    &copy; 2024 Tony Saint-Amour. All rights reserved.
-                </p>
+                <h1 class="navigation-h1">
+                    About me
+                </h1>
             </div>
         </div>
-        
-    </footer>
+
+        <div class="about-body">
+            <div class="about-p1-img">
+                <p>
+                    I'm a web designer with a passion for creating impactful and user-centric web experiences. My journey into the world of web design began during the 2020 shutdowns, igniting a deep passion for web development that has driven me to continuously enhance my skills.
+                
+                    With a solid foundation in JavaScript, HTML, and CSS, along with experience in front-end frameworks like React, I specialize in developing responsive and visually appealing websites. Whether it's building a dynamic e-commerce site, designing a sleek portfolio for a creative professional, or optimizing web applications for performance, I thrive on bringing innovative ideas to life.
+
+
+                </p>
+                <img class="about-img" src="./TonyStool.JPG" />
+            </div>
+            <p class="about-p2">
+                
+                
+                Before diving into web design, I spent 8 years managing concerts and live events, where I honed my skills in organization, attention to detail, and client communication. This background enriches my approach to web design, blending creativity with a strong understanding of user needs and project management.
+                
+                I am excited to leverage my skills and experience to create engaging digital solutions that resonate with users and achieve your goals. Let's collaborate to bring your vision to life!</p>
+        </div>
+
+    </section>
+
+    <section id="project-section" class="project-section">
+        <div class="navigation-section">
+            <div class="navigation">
+                <div id="project-back-home" class="back-home">
+                    <svg class="back-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"/>
+                    </svg>
+                    <p class="navigation-p">Go Back To Home Page</p>
+                </div>
+                <h1 class="navigation-h1">
+                    My Projects
+                </h1>
+            </div>
+        </div>
+
+        <div class="project-body">
+            
+            <div class="project-categories">
+                <p id="all-projects">
+                    All
+                </p>
+                <p id="web-projects">
+                    Web Designs
+                </p>
+                <p id="js-projects">
+                    JavaScript Projects
+                </p>
+                <p id="react-projects">
+                    REACT Projects
+                </p>
+            </div>
+
+            <div class="projects-container" id="projects-container"></div>
+
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+        <div class="navigation-section">
+            <div class="navigation">
+                <div id="contact-back-home" class="back-home">
+                    <svg class="back-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"/>
+                    </svg>
+                    <p class="navigation-p">Go Back To Home Page</p>
+                </div>
+                <h1 class="navigation-h1">
+                    Contact Me
+                </h1>
+            </div>
+        </div>
+
+        <div class="contact-body">
+
+
+
+            <div class="email">
+                <button class="email-btn">Send Me A Email</button>
+            </div>
+
+
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-divs">
+                    <label for="name"> Name</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <div class="form-divs">
+                    <label for="number">Number</label>
+                    <input type="tel" id="number" name="contact_number" />
+                </div>
+                <div class="form-divs">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email" />
+                </div>
+                <div class="form-divs">
+                    <label for="desrip">Description</label>
+                    <textarea id="desrip" rows="5" name="message"></textarea>
+                </div>
+                <div class="form-divs">
+                    <button type="submit" value="Send">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="socials-section" class="socials-section">
+        <div class="navigation-section">
+            <div class="navigation">
+                <div id="socials-back-home" class="back-home">
+                    <svg class="back-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"/>
+                    </svg>
+                    <p class="navigation-p">Go Back To Home Page</p>
+                </div>
+                <h1 class="navigation-h1">
+                    My Socials
+                </h1>
+            </div>
+        </div>
+
+        <div class="socials-body">
+            <a href="https://www.linkedin.com/in/thankyouamour">
+                <svg class="socials-section-svg linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/thankyouamour/">
+                <svg class="socials-section-svg instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
 </body>
 </html>
