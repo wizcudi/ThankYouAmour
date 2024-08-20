@@ -31,12 +31,16 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-    padding: 20px 20px 10px 20px;
-    /* border: solid 2px black; */
+    padding: 20px;
+    font-size: 20px;
+    background-color: var(--blue);
+    color: var(--third);
+    border: solid 2px black;
 }
 .back-home-svg {
     cursor: pointer;
     height: 28px;
+    fill: var(--third);
     /* border: solid 2px red; */
 }
 .navigation-p {
@@ -87,7 +91,7 @@
 .profile-svg {
     height: 50px;
     cursor: pointer;
-    fill: var(--primary);
+    fill: var(--blue);
 }
 .profile-svg-div {
     display: flex;
@@ -282,20 +286,7 @@
     /* border: solid 2px purple; */
 }
 
-.email {
-    display: flex;
-    justify-content: center;
-    /* border: solid 2px black; */
-}
-.email-btn {
-    font-size: 20px;
-    padding: 10px;
-    width: 50%;
-    background-color: var(--blue);
-    color: var(--third);
-    border: solid 2px var(--dark);
-    border-radius: 10px;
-}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -328,7 +319,6 @@
     border-radius: 10px;
 }
 @media (max-width: 465px) {
-    .email-btn,
     .form-divs button {
         width: 85%;
     }
